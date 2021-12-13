@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="InvertovanaAukcija">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="nije">
+      <firstName>Pera</firstName>
+      <lastName>Peric</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent.1">
+      <firstName>Marko</firstName>
+      <lastName>Markovic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent.2">
+      <firstName>Jelena</firstName>
+      <lastName>Jelic</lastName>
+      <title>Mrs</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent.3">
+      <firstName>Ivana</firstName>
+      <lastName>Ivanovic</lastName>
+      <title>Mrs</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="klijent.4">
+      <firstName>Dusan</firstName>
+      <lastName>Silni</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jeste">
+      <firstName>Aleksandar</firstName>
+      <lastName>Todorovic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="agent.1">
+      <firstName>Lazar</firstName>
+      <lastName>Lazic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="agent.2">
+      <firstName>Kristina</firstName>
+      <lastName>Kristinic</lastName>
+      <title>Mrs</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="agent.3">
+      <firstName>Milica</firstName>
+      <lastName>Milovanovic</lastName>
+      <title>Mrs</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="agent.4">
+      <firstName>Bora</firstName>
+      <lastName>Corba</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Klijent">
+      <displayName>Klijent</displayName>
+    </role>
+    <role name="AgentFirme">
+      <displayName>AgentFirme</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Firma" parentPath="/Firma">
+      <displayName>Firma</displayName>
+    </group>
+    <group name="AgentFirme" parentPath="/Firma/Firma">
+      <displayName>AgentFirme</displayName>
+    </group>
+    <group name="Group1" parentPath="/Firma/Firma">
+      <displayName>Group1</displayName>
+    </group>
+    <group name="Group2" parentPath="/Group4/Group4">
+      <displayName>Group2</displayName>
+    </group>
+    <group name="Group4" parentPath="/Group4">
+      <displayName>Group4</displayName>
+    </group>
+    <group name="Aukcija">
+      <displayName>Aukcija</displayName>
+    </group>
+    <group name="RegistrovaniKorisnici" parentPath="/Aukcija">
+      <displayName>RegistrovaniKorisnici</displayName>
+    </group>
+    <group name="Firma" parentPath="/Aukcija/RegistrovaniKorisnici">
+      <displayName>Firma</displayName>
+    </group>
+    <group name="FizickaLica" parentPath="/Aukcija/RegistrovaniKorisnici">
+      <displayName>FizickaLica</displayName>
+    </group>
+    <group name="AgentiFirme" parentPath="/Aukcija/RegistrovaniKorisnici/Firma">
+      <displayName>AgentiFirme</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>nije</userName>
+      <roleName>Klijent</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>klijent.1</userName>
+      <roleName>Klijent</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>klijent.2</userName>
+      <roleName>Klijent</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>klijent.3</userName>
+      <roleName>Klijent</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>klijent.4</userName>
+      <roleName>Klijent</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>jeste</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>agent.1</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>agent.2</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>agent.3</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+    <membership>
+      <userName>agent.4</userName>
+      <roleName>AgentFirme</roleName>
+      <groupName>Aukcija</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
