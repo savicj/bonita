@@ -24,6 +24,7 @@
                 <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="rokZaObavljanje" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="odbijeno" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.PotvrdaPonude" fetchType="LAZY" name="potvrdaPonude" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -40,7 +41,6 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.PotvrdaPonude">
             <fields>
-                <relationField type="AGGREGATION" reference="com.company.model.PonudaFirme" fetchType="LAZY" name="ponuda" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="terminPocetka" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="potvrdjeno" nullable="true" collection="false"/>
             </fields>
@@ -65,6 +65,7 @@
                 <field type="INTEGER" length="255" name="minBrojPonuda" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="maxBrojPonuda" nullable="false" collection="false"/>
                 <field type="TEXT" length="255" name="opis" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.PonudaFirme" fetchType="LAZY" name="ponuda" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
