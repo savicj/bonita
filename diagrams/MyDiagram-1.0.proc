@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_3TJNgHCHEeyFMd04H4QJjQ" name="MyDiagram" author="Jana" bonitaVersion="7.13.0" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_3TJ0kHCHEeyFMd04H4QJjQ" name="Pool">
-      <elements xmi:type="process:Lane" xmi:id="_3TJ0kXCHEeyFMd04H4QJjQ" name="Employee lane" actor="_3TJ0qnCHEeyFMd04H4QJjQ">
+    <elements xmi:type="process:Pool" xmi:id="_3TJ0kHCHEeyFMd04H4QJjQ" name="Invertovana aukcija">
+      <elements xmi:type="process:Lane" xmi:id="_3TJ0kXCHEeyFMd04H4QJjQ" name="Fizicko lice" actor="_3TJ0qnCHEeyFMd04H4QJjQ">
         <elements xmi:type="process:StartEvent" xmi:id="_3TJ0knCHEeyFMd04H4QJjQ" name="Start1" outgoing="_3TJ0p3CHEeyFMd04H4QJjQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_3TJ0k3CHEeyFMd04H4QJjQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_3TJ0lHCHEeyFMd04H4QJjQ" name="" content="" returnTypeFixed="true"/>
@@ -119,7 +119,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_6gdyMnCUEey1MIK4OvJUiA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_MZ6c0HCREey1MIK4OvJUiA" name="Lane1">
+      <elements xmi:type="process:Lane" xmi:id="_MZ6c0HCREey1MIK4OvJUiA" name="Firma">
         <elements xmi:type="process:ServiceTask" xmi:id="_z6FbcHCREey1MIK4OvJUiA" name="Obavestavanje o zahtevu" outgoing="_3kROMHCREey1MIK4OvJUiA" incoming="_z6OlYHCREey1MIK4OvJUiA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_z6GCgXCREey1MIK4OvJUiA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_z6GCgHCREey1MIK4OvJUiA" name="" content="" returnTypeFixed="true"/>
@@ -523,7 +523,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_z6PzhHCREey1MIK4OvJUiA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_z6PzgXCREey1MIK4OvJUiA" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z6PzgnCREey1MIK4OvJUiA" points="[-28, 25, 60, -490]$[-28, 485, 60, -30]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z6PzgnCREey1MIK4OvJUiA" points="[-50, 25, 38, -490]$[-50, 485, 38, -30]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_3kTDYHCREey1MIK4OvJUiA" type="4001" element="_3kROMHCREey1MIK4OvJUiA" source="_z6HQoHCREey1MIK4OvJUiA" target="_5jc3sHCREey1MIK4OvJUiA" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_3kTqcHCREey1MIK4OvJUiA" type="6001">
