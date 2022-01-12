@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.DodatneInformacije">
+            <fields>
+                <field type="TEXT" length="255" name="pitanje" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="odgovor" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potvrda" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.KategorijaPoslova">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
@@ -10,10 +20,9 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.OdgovorDodatneInformacije">
+        <businessObject qualifiedName="com.company.model.Ocena">
             <fields>
-                <field type="TEXT" length="255" name="odgovor" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="potvrda" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -23,34 +32,9 @@
             <fields>
                 <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="rokZaObavljanje" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="odbijeno" nullable="false" collection="false"/>
-                <relationField type="COMPOSITION" reference="com.company.model.PotvrdaPonude" fetchType="LAZY" name="potvrdaPonude" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.company.model.PotvrdaOIzvrsenomPoslu">
-            <fields>
-                <field type="BOOLEAN" length="255" name="zavrseno" nullable="false" collection="false"/>
-                <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.company.model.PotvrdaPonude">
-            <fields>
-                <field type="LOCALDATE" length="255" name="terminPocetka" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="potvrdjeno" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.company.model.ZahtevZaDodatneInformacije">
-            <fields>
-                <field type="TEXT" length="255" name="opis" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odbijeno" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potvrda" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="terminPocetka" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -66,6 +50,7 @@
                 <field type="INTEGER" length="255" name="maxBrojPonuda" nullable="false" collection="false"/>
                 <field type="TEXT" length="255" name="opis" nullable="false" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.PonudaFirme" fetchType="LAZY" name="ponuda" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="zavrseno" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
